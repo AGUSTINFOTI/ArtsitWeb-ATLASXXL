@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Script src="https://cdn.tailwindcss.com"></Script>
+    <title>ATLAS WEB</title>
+
+</head>
+<body>
+
+<!--NAV BAR-->
+  <nav class="bg-gray-800">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-14 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex flex-shrink-0 items-center">
+            <img class="h-8 w-auto rounded-full" src="../img/A (3).jpg" alt="Your Company">
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="../componentes/index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
+              <a href="../componentes/fechas.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Fechas</a>
+              <a href="../componentes/entradas.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Entradas</a>
+              <a href="../componentes/escuchar.html" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Musica para volarte la psiquis</a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+            <span class="absolute -inset-1.5"></span>
+            <span class="sr-only">View notifications</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+            </svg>
+          </button>
+  
+          <!-- Profile dropdown -->
+        </div>
+      </div>
+    </div>  
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="../componentes/index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">home</a>
+        <a href="../componentes/fechas.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Fechas</a>
+        <a href="../componentes/entradas.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Entradas</a>
+        <a href="../componentes/escuchar.html" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium">Musica para volarte la psiquis</a>
+      </div>
+    </div>
+  </nav>
+<!--NAV BAR-->
+
+
+<!--MUSICA PARA ROMPERTE LA PSQUIS-->
+<div class="bg-white">
+  <H1 class="text-9xl text-center pt-8 mb-1 font-serif list-disc">Musica para<br>volarte la psiquis</H1>
+<!--REDES-->
+<div class="container mx-auto flex justify-center items-center">
+  <a href="https://www.facebook.com/" class="p-5" target="_blank">
+    <svg fill="currentColor" viewBox="0 0 24 24" class="hover:bg-gray-300 w-10 h-10 rounded-3xl" aria-hidden="true">
+      <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd">
+      </path>
+    </svg>
+  </a>
+  <a href="https://www.instagram.com/atlas_xxl/" class="p-5" target="_blank">
+    <span class=""></span>
+    <svg fill="currentColor" viewBox="0 0 24 24" class="hover:bg-gray-300 w-10 h-10 rounded-3xl" aria-hidden="true">
+      <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd">
+      </path>
+    </svg>
+  </a>
+  <a href="https://open.spotify.com/intl-es/artist/3TL65Q3eF3foMuXttiosS2" class="p-5" target="_blank">
+    <span class=""></span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-spotify hover:bg-gray-300 w-8 h-8 rounded-3xl" viewBox="0 0 16 16">
+      <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+    </svg>
+  </a>
+  <a href="https://www.tiktok.com/@atlasxxl" class="p-5" target="_blank">
+    <span class=""></span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok hover:bg-gray-300 w-8 h-8 rounded-3xl" viewBox="0 0 16 16">
+      <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+    </svg>
+  </a>
+  <a href="https://www.youtube.com/@atlasxxl" class="p-5" target="_blank">
+    <span class=""></span>
+    <svg fill="currentColor" viewBox="0 0 24 24" class="hover:bg-gray-300 w-10 h-10 rounded-3xl" aria-hidden="true">
+      <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+</div>
+<!--REDES-->
+
+
+<p class="text-center text-gray-800 rounded-full font-serif p-5 sm:p-10">
+
+
+
+  <div class="m-2 space-y-2">
+    <div
+      class="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white"
+      tabindex="1"
+    >
+      <div class="flex cursor-pointer items-center justify-between">
+        <span> CONTEXTO </span>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
+          class="h-2 w-3 transition-all duration-500 group-focus:-rotate-180"
+        />
+      </div>
+      <div
+        class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000"
+      >
+      (leer en tono de Anton Ego de ratauille)<br>
+      Eh aquí una fina selección de obras musicales, un banquete sonoro que despierta los sentidos y lleva a un viaje sensorial exquisito. <br> 
+      Cada canción, como un plato gourmet, presenta una mezcla única de ingredientes melódicos y armonías que deleitarán tu paladar auditivo , <br>
+      Dentro del menú existen obras para disfrutar en cada rincón del vasto universo musical, cada una sirviendo como un plato distinguido que agrega capas de complejidad y emoción a este festín sonoro.<br>
+      Permíteme guiarte a través de las delicias auditivas que componen esta experiencia única o algo asi LOL</p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+
+<!--canciones-->
+    <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight text-gray-900">Musica para cabecear el suelo</h2>  
+      <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+        <div class="group relative">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <!--<img src="../img/GIRANDO.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">-->
+            <img src="../img/singo de pregunta.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="https://open.spotify.com/intl-es/artist/3TL65Q3eF3foMuXttiosS2S" target="_blank">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Girando
+                </a>
+              </h3>
+              <p class="mt-1 text-sm text-gray-500">"Payn To Win"</p>
+            </div>
+            <p class="text-sm font-medium text-gray-900"></p>
+          </div>
+        </div>
+        <div class="group relative">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <img src="../img/Proyecto Dyznomia Cover Art.png" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="https://www.youtube.com/watch?v=DxsO1x8WQpI" target="_blank">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Obsesion a destiempo
+                </a>
+              </h3>
+              <p class="mt-1 text-sm text-gray-500">"Proyecto Dyznomia"</p>
+            </div>
+            <p class="text-sm font-medium text-gray-900"></p>
+          </div>
+        </div>
+        <div class="group relative">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <!--<img src="../img/A (4).jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">-->
+            <img src="../img/singo de pregunta.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="https://open.spotify.com/intl-es/artist/3TL65Q3eF3foMuXttiosS2S" target="_blank">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  NEU-ROTICO
+                </a>
+              </h3>
+              <p class="mt-1 text-sm text-gray-500">"Payn To Win"</p>
+            </div>
+            <p class="text-sm font-medium text-gray-900"></p>
+          </div>
+        </div>
+            <div class="group relative">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                <img src="../img/Proyecto Dyznomia Cover Art.png" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+              </div>
+              <div class="mt-4 flex justify-between">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="https://www.youtube.com/watch?v=MYi2_oseqbA" target="_blank">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Carta a mi amigo imaginario 
+                    </a>
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-500">"Proyecto Dyznomia"</p>
+                </div>
+                <p class="text-sm font-medium text-gray-900"></p>
+              </div>
+            </div>
+        <!-- More products... -->
+      </div>
+    </div>
+  </div>
+<!--canciones-->
+
+
+  <!--n̶o̶ ̶h̶a̶g̶a̶s̶ ̶c̶l̶i̶c̶k̶ ̶a̶c̶a̶ ̶-->
+  <div class="flex justify-end">
+    <a href="semillas.html" class="bg-gray-800 hover:bg-gray-600 text-white font-bold p-2 rounded-3xl"> ̶n̶o̶ ̶h̶a̶g̶a̶s̶ ̶c̶l̶i̶c̶k̶ ̶a̶c̶a̶ ̶</a>
+  </div>
+  <!--n̶o̶ ̶h̶a̶g̶a̶s̶ ̶c̶l̶i̶c̶k̶ ̶a̶c̶a̶ ̶-->
+
+<!--canciones-->
+  <div class="mx-auto max-w-2xl px-4 py-6 sm:px-6 sm:py-4 lg:max-w-7xl lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-gray-900">Musica para estar child y prenderlo</h2>
+    <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+      <div class="group relative">
+        <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+          <img src="../img/Proyecto Dyznomia Cover Art.png" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+        </div>
+        <div class="mt-4 flex justify-between">
+          <div>
+            <h3 class="text-sm text-gray-700">
+              <a href="https://www.youtube.com/watch?v=b0mkJkmRolM" target="_blank">
+                <span aria-hidden="true" class="absolute inset-0"></span>
+                Espejos
+              </a>
+            </h3>
+            <p class="mt-1 text-sm text-gray-500">"Proyecto Dyznomia"</p>
+          </div>
+          <p class="text-sm font-medium text-gray-900"></p>
+        </div>
+      </div>
+        <div class="group relative">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <img src="../img/Proyecto Dyznomia Cover Art.png" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="https://www.youtube.com/watch?v=ix7bazhWy44" target="_blank">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Pulso de mi voz 
+                </a>
+              </h3>
+              <p class="mt-1 text-sm text-gray-500">Proyecto Dyznomia</p>
+            </div>
+            <p class="text-sm font-medium text-gray-900"></p>
+          </div>
+        </div>
+        <div class="group relative">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <img src="../img/Proyecto Dyznomia Cover Art.png" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="https://www.youtube.com/watch?v=RZAPsgSV44g" target="_blank">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Melodia
+                </a>
+              </h3>
+              <p class="mt-1 text-sm text-gray-500">Proyecto Dyznomia</p>
+            </div>
+            <p class="text-sm font-medium text-gray-900"></p>
+          </div>
+        </div>
+        <div class="group relative">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <img src="../img/singo de pregunta.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="https://open.spotify.com/intl-es/artist/3TL65Q3eF3foMuXttiosS2S" target="_blank">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Caminando
+                </a>
+              </h3>
+              <p class="mt-1 text-sm text-gray-500">Proyecto Dyznomia</p>
+            </div>
+          </div>
+        </div>
+<!--canciones-->
+      <!-- More products... -->
+    </div>
+  </div>
+</div>
+<!--MUSICA PARA ROMPERTE LA PSQUIS-->
+
+
+<!--footer final-->
+<footer>
+  <div class="container mx-auto flex justify-center items-center py-10">
+    <a href="https://www.facebook.com/" class="p-5" target="_blank">
+      <svg fill="currentColor" viewBox="0 0 24 24" class="hover:bg-gray-300 w-10 h-10 rounded-3xl" aria-hidden="true">
+        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd">
+        </path>
+      </svg>
+    </a>
+    <a href="https://www.instagram.com/atlas_xxl/" class="p-5" target="_blank">
+      <span class=""></span>
+      <svg fill="currentColor" viewBox="0 0 24 24" class="hover:bg-gray-300 w-10 h-10 rounded-3xl" aria-hidden="true">
+        <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd">
+        </path>
+      </svg>
+    </a>
+    <a href="https://open.spotify.com/intl-es/artist/3TL65Q3eF3foMuXttiosS2" class="p-5" target="_blank">
+      <span class=""></span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-spotify hover:bg-gray-300 w-8 h-8 rounded-3xl" viewBox="0 0 16 16">
+        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+      </svg>
+    </a>
+    <a href="https://www.tiktok.com/@atlasxxl" class="p-5" target="_blank">
+      <span class=""></span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok hover:bg-gray-300 w-8 h-8 rounded-3xl" viewBox="0 0 16 16">
+        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+      </svg>
+    </a>
+    <a href="https://www.youtube.com/@atlasxxl" class="p-5" target="_blank">
+      <span class=""></span>
+      <svg fill="currentColor" viewBox="0 0 24 24" class="hover:bg-gray-300 w-10 h-10 rounded-3xl" aria-hidden="true">
+        <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd"/>
+      </svg>
+    </a>
+  </div>
+</footer>
+<!--footer final-->
+</body>
